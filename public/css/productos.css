@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'open sans';
+}
+/* -----------------------menu---------------- */
+.navbar {
+    background-color: green;
+    height: 60px;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between; /* para que se aline el logo asia la derecha */
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .link,
+  .logo {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 100%;
+     
+  }
+  .nav1 {
+    display: flex;
+    margin-right: 40px; /* para separar de la derecha */
+    list-style: none;
+  }
+  .nav-menu {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  .link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  .link:hover,
+  .link-active {
+    background-color: rgb(19, 104, 19);
+    border-radius: 15px;
+    transition: 0.5s; /* para que no sea tan brusco el efecto */
+  }
+  .bot {
+    /* boton tipo amburgesa */
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px 20px 0;
+      /* background-color: red; */
+    }
+    .menu {
+      height: 50px;
+    }
+  
+    .logo {
+      font-size: 25px;
+      line-height: 50px;
+      padding: 0 10px;
+    }
+    .nav1 {
+      flex-direction: column; /* para que este unu ensima del otro */
+      margin-right: 20px; /* para separar de la derecha */
+      background-color: #b84b14fd;
+      position: fixed;
+      left: 0;
+      top: 50px;
+      width: 100%;
+      align-items: center;
+      padding: 20px 0;
+  
+      height: calc(100% - 50px); /* para que agarretodo e alto */
+      overflow-y: auto; /* para poder vajar cuando el dispositivo es muy pequeño */
+      left: 100%;
+      transition: left 0.3s;
+    }
+    .nav-menu {
+      line-height: 50px;
+    }
+  
+    .link:hover,
+    .link-active {
+      background: none;
+      color: #4e2816;
+    }
+    .bot {
+      display: block;
+    }
+    .nav-menu-visible {
+      /* para que aparesca el menu */
+      left: 0;
+    }
+  }
+
+  /*---------------------------- container--------------------------- */
+ body{
+    background-image: url("css/img/body.jpg");
+    width: 100%;
+    height: 80vh;
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+    
+}
+
+.contenedor{
+    border-radius: 15px;
+    background: rgb(128, 128, 128);
+    width: 50%;
+    height: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(51, 49, 49, 0.877);
+    margin-top: 100px;
+    
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+    color: rgba(7, 7, 7, 0.87);
+    
+    
+}
+
+label{
+    
+    font-family: cursive;
+}
+.p0{
+    margin-left: 10px;
+}
+.p1{
+    margin-right: 50px;
+}
+.p2{
+    margin-right: 100px;
+}
+.p3{
+    margin-right: 90px;
+}
+.p4{
+    margin-right: 10px;
+}
+.box{
+    text-align: center;
+    border-radius: 4px;
+    font-size: 19px;
+    background: rgba(255, 255, 255, 0.651);
+    border: 0;
+    margin-left: 50px;
+}
+.registro{
+    margin-top: 15px;
+    border-radius: 7px;
+    font-size: 20px;
+    font-family: cursive;
+    width: 20%;
+    height: 40px;
+   background-color: rgba(0, 255, 42, 0.733);
+   color: white;
+   border: 0;
+   cursor: pointer;
+}
+table{
+    border:0;
+    text-align:center;
+    margin-top: 20px;
+    border-radius: 6px;
+    height: 50px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.493);
+    overflow-x: scroll;
+} 
+
+/* .---------------------------fooder.-------------------- */
+
+.fooder{
+  margin-top: 50px;
+  /* background: #17992d;
+  border-top: 2px solid  rgb(2, 100, 2); */
+  background: #414141;
+  border-top: 1px solid rgba(128, 128, 128, 0.445);
+  width: 100%;
+  display: flex;
+  height: 200px;
+  color: white;
+} 
+/* --------------------------------------------lado izquierdo------------------ */
+.ladoIzquierdo{
+  
+  /* background: blue; */
+  /* margin: 20px; */
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 50%;
+}
+.fooderP{
+ 
+  font-size: 15px;
+  
+}
+.container1{
+  display: flex;
+}
+.movil{
+  width: 30px;
+  margin: 20px;
+  /* margin-left: 150px; */
+}
+.boxtexto{ 
+  margin-top: 30px;
+}
+/* ------------------------------------------derecho--------------------- */
+.derecho{
+ /*  background: blueviolet; */
+  width: 50%;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+.articulo{
+ 
+  font-size: 13px;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+.textderecho{
+  
+  font-weight: 900;
+  margin-right: 10px;
+  
+}

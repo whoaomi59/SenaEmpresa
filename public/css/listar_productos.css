@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'open sans';
+}
+/* -----------------------menu---------------- */
+.navbar {
+    background-color: green;
+    height: 60px;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between; /* para que se aline el logo asia la derecha */
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .link,
+  .logo {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 100%;
+     
+  }
+  .nav1 {
+    display: flex;
+    margin-right: 40px; /* para separar de la derecha */
+    list-style: none;
+  }
+  .nav-menu {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  .link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  .link:hover,
+  .link-active {
+    background-color: rgb(19, 104, 19);
+    border-radius: 15px;
+    transition: 0.5s; /* para que no sea tan brusco el efecto */
+  }
+  .bot {
+    /* boton tipo amburgesa */
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px 20px 0;
+      /* background-color: red; */
+    }
+    .menu {
+      height: 50px;
+    }
+  
+    .logo {
+      font-size: 25px;
+      line-height: 50px;
+      padding: 0 10px;
+    }
+    .nav1 {
+      flex-direction: column; /* para que este unu ensima del otro */
+      margin-right: 20px; /* para separar de la derecha */
+      background-color: #b84b14fd;
+      position: fixed;
+      left: 0;
+      top: 50px;
+      width: 100%;
+      align-items: center;
+      padding: 20px 0;
+  
+      height: calc(100% - 50px); /* para que agarretodo e alto */
+      overflow-y: auto; /* para poder vajar cuando el dispositivo es muy pequeño */
+      left: 100%;
+      transition: left 0.3s;
+    }
+    .nav-menu {
+      line-height: 50px;
+    }
+  
+    .link:hover,
+    .link-active {
+      background: none;
+      color: #4e2816;
+    }
+    .bot {
+      display: block;
+    }
+    .nav-menu-visible {
+      /* para que aparesca el menu */
+      left: 0;
+    }
+  }
+/* ------------Titulo------------- */
+.titulo {
+    margin-top: 20px;
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ----------------------Galeria------------------- */
+
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(0, 128, 0, 0.61);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+/* ---------------------------listar----------------- */
+.containerlistar{
+    border: 2px rgb(77, 76, 76) solid;
+    width: auto;
+    height: 250px;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    background: #414141bd;
+    border-radius: 6px;
+    
+}
+.box{
+    display: flex;
+    margin-top: 20px;
+}
+.listarText, .listarselect{
+    margin-left: 5px;
+    margin-right: 2px;
+}
+.listarselect{
+    text-align: center;
+}
+.listarText{
+    color: white;
+    
+    
+}
+.boton{
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 50%;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgb(66, 66, 66);
+}
+.boton:hover{
+    background: rgb(40, 41, 39);
+}
+/* --------------------Clientes ------------------------*/
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.cards .card{
+    background: rgb(3, 146, 3);
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*  Our team */
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* .---------------------------fooder.-------------------- */
+
+.fooder{
+    /* background: #17992d;
+    border-top: 2px solid  rgb(2, 100, 2); */
+    background: #414141;
+    border-top: 1px solid rgba(128, 128, 128, 0.445);
+    width: 100%;
+    display: flex;
+    height: 200px;
+    color: white;
+    margin-top: 50px;
+} 
+/* --------------------------------------------lado izquierdo------------------ */
+.ladoIzquierdo{
+    
+    /* background: blue; */
+    /* margin: 20px; */
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 50%;
+}
+.fooderP{
+   
+    font-size: 15px;
+    
+}
+.container1{
+    display: flex;
+}
+.movil{
+    width: 30px;
+    margin: 20px;
+    /* margin-left: 150px; */
+}
+.boxtexto{ 
+    margin-top: 30px;
+}
+/* ------------------------------------------derecho--------------------- */
+.derecho{
+   /*  background: blueviolet; */
+    width: 50%;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.articulo{
+   
+    font-size: 13px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.textderecho{
+    
+    font-weight: 900;
+    margin-right: 10px;
+    
+}

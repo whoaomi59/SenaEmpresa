@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="icon" type="imagen/png" href="img/logoSenaVerde.png"> <!-- icono en el titulo -->
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!------------------menu repisive------------------------->
+    <header class="navbar">
+        <nav>
+          <a href="" ><img class="logo" src="img/logosena.png" alt=""></a>
+          <button class="bot" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav1">
+            <li class="nav-menu"><a href="/" class="link">Inicio</a></li>
+            <li class="nav-menu"><a href="/index" class="link">Unidades productivas</a></li>
+            <li class="nav-menu"><a href="#contactenos" class="link">Contacto</a></li>
+            
+          </ul>
+        </nav>
+    </header>
+
+    <!-- -------------container--------------------- -->
+    <div class="contenedor"><!-- contiene todo el proyecto -->
+        <h1>Registro de productos</h1>
+        <!-- formulario -->
+            <form action="#" method="post">
+                <label class="p0">Codigo producto</label><input type="text" id="nota3" class="box"><br>
+                <label>Nombre producto</label><input type="text" id="nombre" class="box"><br>
+                <label class="p1">Descripcion</label><input type="text" id="nota1" class="box"><br>
+                <label class="p2"> Stock</label><input type="text" id="nota2" class="box"><br>
+                <label class="p3">Estado</label><input type="text" id="nota3" class="box"><br>
+                <label class="p4" >Valor producto</label><input type="text" id="nota3" class="box"><br>
+                <input type="button" value="Registrar" class="registro" onclick="registro_notas();">
+            </form>
+            <!-- tabla de contenido -->
+            <table>
+                <th>ID</th>
+                <th>Nombre_pdt</th>
+                <th>Descripcion</th>
+                <th>Stock</th>
+                <th>Estado_pdt</th>
+                <th>Valor_pdt</th>
+                <tbody id="tabla"></tbody>
+            </table>
+    </div>
+    <!-- foderr -->
+    <div class="fooder">
+      <div class="ladoIzquierdo">
+        <p class="fooderP" id="contactenos">¿Necesitas más informacion?</p>
+          <div class="container1">
+                <div class="boxico">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" class="svg-inline--fa movil fa-phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"></path></svg>
+                </div>
+                <div class="boxtexto">
+                  <p class="fooderP">Bogota:</p>
+                  <p class="fooderP">Resto del país:</p>
+                </div>
+          </div>
+        </div>
+        <div class="derecho">
+          <p class="articulo"><span class="textderecho">Horario de ateción:</span>Lunes a Viernes 7:00 am a 7:00 pm - Sábados 8:00 am a 10:00 pm</p>
+        </div>
+        
+      
+    </div>
+</body>
+<script src="js/productos.js"></script>
+</html>

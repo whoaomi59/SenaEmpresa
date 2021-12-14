@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'open sans';
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #4ebc53;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(180, 45%, 52%, 0.664)), url(../img/body.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(180, 45%, 52%, 0.664)), url(../img/body.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+    font-family: 'open sans';
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* -------------------------------------------------contenedor--------------------------------- */
+.container{
+    justify-content: center;
+    margin:auto;
+    width: 70%;
+    display: block;
+}
+
+.box1{
+    /* background: darkblue; */
+    width: 100%;
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid rgba(201, 181, 181, 0.781);
+}
+.titulo{
+   /*  color: #23ac2a; */
+    color: rgba(11, 109, 11, 0.925);
+    font-size: 25px;
+    text-align: center;
+    padding-left: 60px;
+    margin-top: 40px;
+    
+}
+.logoVerde{
+    height: 100px;
+    margin-left: 200px;
+}
+
+.box2{
+    border-bottom: 1px solid rgba(201, 181, 181, 0.781);
+    margin-bottom: 20px;
+}
+.box2{
+    display: flex;
+    margin-top: 10px;
+}
+h2,p{
+    color: darkgray;
+    font-size: 20px;
+}
+.minibox1,.minibox2,.minibox3{
+    width: 30%;
+    height: 100px;
+    text-align: center;
+    margin: 5px;
+}
+.unidadlogo{
+    width: 50px;
+    margin-top: 5px;
+    color: darkgreen;
+}
+.unidadlogos{
+    width: 70px;
+    margin-top: 5px;
+    color: darkgreen;
+}
+/* .minibox1{
+    background: darkgreen;
+    
+}
+.minibox2{
+    background: rgb(0, 80, 100);
+    
+}
+.minibox3{
+    background: rgb(0, 43, 100);
+    
+} */
+/* .---------------------------fooder.-------------------- */
+
+.fooder{
+    /* background: #17992d;
+    border-top: 2px solid  rgb(2, 100, 2); */
+    background: #414141;
+    border-top: 1px solid rgba(128, 128, 128, 0.445);
+    width: 100%;
+    display: flex;
+    height: 200px;
+    color: white;
+} 
+/* --------------------------------------------lado izquierdo------------------ */
+.ladoIzquierdo{
+    
+    /* background: blue; */
+    /* margin: 20px; */
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 50%;
+}
+.fooderP{
+   
+    font-size: 15px;
+    
+}
+.container1{
+    display: flex;
+}
+.movil{
+    width: 30px;
+    margin: 20px;
+    /* margin-left: 150px; */
+}
+.boxtexto{ 
+    margin-top: 30px;
+}
+/* ------------------------------------------derecho--------------------- */
+.derecho{
+   /*  background: blueviolet; */
+    width: 50%;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.articulo{
+   
+    font-size: 13px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.textderecho{
+    
+    font-weight: 900;
+    margin-right: 10px;
+    
+}
