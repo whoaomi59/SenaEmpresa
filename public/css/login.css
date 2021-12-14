@@ -6,11 +6,13 @@ body {
     font-family: 'open sans';
     background-image: url("img/body.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    
     opacity: 5px;
     background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(180, 45%, 52%, 0.664)), url(../css/img/body.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(180, 45%, 52%, 0.664)), url(../css/img/body.jpg);
+    background-size: cover;
+    
 }
 .container{
    margin-top: 10%;

@@ -11,7 +11,7 @@ controlador.Renderizar_index=(req,res)=>{
         var password = req.body.password;
 
         if (login =="mario" && password =="123"){
-            res.render("index.ejs",{"usuario":login})
+            res.render("admin.ejs",{"usuario":login})
         }
         
         else{

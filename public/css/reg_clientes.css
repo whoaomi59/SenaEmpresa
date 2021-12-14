@@ -18,6 +18,7 @@ h1{
     border: 2px solid grey;
     padding: 30px;
     margin-left: 100px;
+    margin-bottom: 400px;
 }
 
 /* -----------------------menu---------------- */
@@ -140,6 +141,7 @@ h1{
     display: flex;
     height: 200px;
     color: white;
+    border-top: 50px;
 } 
 /* --------------------------------------------lado izquierdo------------------ */
 .ladoIzquierdo{

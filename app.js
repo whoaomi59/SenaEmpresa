@@ -10,12 +10,13 @@ servidor.set('view engine', 'ejs');
 servidor.set('views', __dirname + '/views');
 /* ---------------------------------rutas----------------------------------------------- */
 servidor.get("/", (req, resp) => {
-    resp.render("login.ejs")
+    resp.render("index.ejs")
     /* resp.render("productos.ejs") */
     /* resp.render("index.ejs") */
     /* resp.render("reg_clientes.ejs") */
 });
 /* le decimos al servidor que use el modulo que creamos*/
+servidor.use(require("./routes/route_admin"))   
 servidor.use(require("./routes/route_login"))   
 servidor.use(require("./routes/route_producto")) 
 servidor.use(require("./routes/route_clientes")) 
